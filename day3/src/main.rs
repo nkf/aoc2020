@@ -9,7 +9,7 @@ fn main() {
     println!("{}", count);
 }
 
-fn count_slope(slope: &str, right: usize, down: usize) -> usize {
+fn count_slope(slope: &str, right: usize, down: usize) -> i64 {
     let mut x = 0;
     let mut trees = 0;
     for (i, line) in slope.lines().enumerate().skip(down) {
